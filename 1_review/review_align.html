@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-items 예제</title>
+    <style>
+      .container {
+        display: flex;
+        height: 200px; /* 컨테이너 높이 */
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+
+      .item {
+        width: 50px;
+        height: 50px;
+        background-color: lightblue;
+        margin: 5px;
+      }
+
+      /* flex-start 예제 */
+      .flex-start {
+        align-items: flex-start;
+      }
+
+      /* flex-end 예제 */
+      .flex-end {
+        align-items: flex-end;
+      }
+
+      /* center 예제 */
+      .center {
+        align-items: center;
+      }
+
+      /* stretch 예제 */
+      .stretch {
+        align-items: stretch;
+      }
+
+      /* baseline 예제 */
+      .baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flex-start">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <div class="container flex-end">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <div class="container center">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <div class="container stretch">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <div class="container baseline">
+      <div class="item"></div>
+      <div class="item" style="height: 80px"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

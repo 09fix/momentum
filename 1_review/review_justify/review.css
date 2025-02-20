@@ -1,0 +1,50 @@
+/* 기본 스타일 설정 */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+/* 각 컨테이너 스타일 */
+.container {
+  display: flex;
+  background: lightgray;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  height: 60px;
+  border-radius: 8px;
+}
+
+/* 박스 스타일 */
+.box {
+  width: 50px;
+  height: 50px;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* justify-content 값 적용 */
+.start {
+  justify-content: flex-start;
+} /* 왼쪽 정렬 */
+.end {
+  justify-content: flex-end;
+} /* 오른쪽 정렬 */
+.center {
+  justify-content: center;
+} /* 가운데 정렬 */
+.between {
+  justify-content: space-between;
+} /* 양쪽 끝 + 간격 동일 */
+.around {
+  justify-content: space-around;
+} /* 양쪽 여백 포함 간격 동일 */
+.evenly {
+  justify-content: space-evenly;
+} /* 모든 간격 동일 */
