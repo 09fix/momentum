@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project_momentum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 내용 전체를 포함합니다. -->
+    <div class="container"></div>
+    <!-- 현재 시간을 표시합니다. -->
+    <h1 id="clock">00:00:00</h1>
+
+    <!-- 날씨 정보를 표시합니다. (현재 + 내일) -->
+    <p id="weather">날씨 정보를 불러오는 중...</p>
+    <p id="tommorow-weather">내일 날씨 정보를 불러오는 중...</p>
+
+    <!-- 동기부여 문구 -->
+    <p id="quote">오늘도 최선을 다 하자!</p>
+
+    <!-- 할 일 입력창 및 목록 -->
+    <div class="todo-container">
+      <h2>당신의 오늘 할 일을 알려주세요</h2>
+      <input type="text" id="todo-input" />
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
