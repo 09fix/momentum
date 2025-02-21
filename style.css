@@ -1,62 +1,147 @@
-/* 모든 요소의 기본 스타일을 초기화합니다 */ /*  */
+/* 모든 요소의 기본 스타일을 초기화합니다 */
 * {
-  margin: 0; /* 요소의 바깥 여백을 제거합니다. */
-  padding: 0; /* 요소의 안쪽 여백을 제거합니다. */
-  box-sizing: border-box; /* 요소의 크기를 width와 height 기준으로 설정합니다. */
-  font-family: "Arial" m sans-serif; /* 전체 폰트를 Arial로 지정합니다. */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bagel Fat One", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
 }
 
 /* 🔹 body 스타일 (전체 페이지) */
 body {
-  height: 100vh; /* 브라우저 높이를 100%로 설정합니다. */
-  display: flex; /* Flexbox를 사용하여 정렬합니다. */
-  justify-content: center; /* 수평을 가운데 정렬합니다. */
-  align-items: center; /* 수직을 가운데 정렬합니다. */
-  text-align: center; /* 텍스트를 가운데 정렬합니다. */
-  color: black; /* 텍스트 색상을 흰색으로 설정합니다. */
-  background-size: cover; /* 배경 이미지가 화면을 가득 채우도록 설정합니다. */
-  background-position: center; /* 배경 이미지를 가운데 정렬합니다. */
-  transition: background 0.5s; /* 배경 이미지가 변경될 때, 0.5초 동안 부드럽게 전환합니다. */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s;
+  padding: 20px;
 }
 
 /* 🔹 container 스타일 */
 .container {
-  background: rgba(0, 0, 0, 0.3); /* 배경을 검은색 반투명 상태로 설정합니다. */
-  padding: 20px; /* 내부 여백을 20px로 설정합니다. */
-  border-radius: 15px; /* 컨테이너 모서리를 둥글게 설정합니다. */
-  width: 90%; /* 가로 길이를 전체 화면의 90%로 설정합니다. */
-  max-width: 400px; /* 최대 가로 길이를 400px로 제한합니다. */
+  /* background: rgba(0, 0, 0, 0.3); 더 어두운 반투명 배경 */
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 그림자 효과 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%; /* 화면 중앙에 배치되도록 높이 설정 */
 }
 
-/* 🔹 시계(h1) 스타일*/
+/* 🔹 시계(h1) 스타일 */
 h1 {
-  font: size 3rem; /* 글자 크기를 기본 폰트 크기의 3배(3rem)로 설정합니다. */
+  font-size: 6rem;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row; /* 오전/오후와 시간이 가로로 나란히 배치됨 */
+  justify-content: center;
+  align-items: center;
 }
 
-/* 🔹 모든 단락(p) 스타일 */
-p {
-  font-size: 1.2rem; /* 글자 크기를 기본 폰트 크기의 1.2배(1.2rem)로 설정합니다. */
-  margin: 10px 0; /* 위, 아래 여백을 10px로 설정합니다. */
+#am-pm {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+#time {
+  font-size: 5rem;
 }
 
 /* 🔹 할 일 목록 컨테이너(todo-container) 스타일 */
+.todo-container {
+  width: 100%;
+  text-align: center;
+}
+
+.todo-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* 🔹 할 일 입력창 스타일 */
 .todo-input {
-  width: 100%; /* 입력창 가로 크기를 todo-container 요소에 맞게 설정합니다. */
-  padding: 10px; /* 내부 여백을 10px로 설정합니다. */
-  border: none; /* 테두리를 제거합니다. */
-  border-radius: 5px; /* 입력창 모서리를 둥글게 설정합니다. */
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 /* 🔹 할 일 목록(ul) 스타일 */
 ul {
-  list-style: none; /* 리스트 기본 점을 제거합니다. */
-  margin-top: 10px; /* 위쪽 여백을 10px로 설정합니다. */
+  list-style: none;
+  margin-top: 10px;
 }
 
-/* 🔹 개별 할 일 목록(li) 스타일*/
+/* 🔹 개별 할 일 목록(li) 스타일 */
 li {
-  padding: 5px; /* 내부 여백을 5px로 설정합니다. */
-  background: rgba(255, 255, 255, 0.2); /* 배경을 흰색 20% 투명도 */
-  margin-top: 5px; /* 위쪽 여백을 5px로 설정합니다. */
-  border-radius: 5px; /* 항목 모서리를 둥글게 설정합니다. */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 할 일 목록 아이템 클릭시 스타일 변경 */
+li:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* 날씨 정보 스타일 (우측 상단에 고정) */
+#weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* 날씨 아이콘 크기 조정 */
+#weather i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+/* 반응형 디자인 (모바일 화면에서 크기 조정) */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #weather {
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+  }
+
+  #weather i {
+    font-size: 1.5rem;
+  }
 }

@@ -4,27 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project_momentum</title>
+    <!-- 구글 폰트(Jua체)를 가져옵니다. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Weather Icons CSS 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+
     <!-- style.css 파일의 CSS 스타일을 적용합니다. -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- 내용 전체를 포함합니다. -->
-    <div class="container"></div>
-    <!-- 현재 시간을 표시합니다. -->
-    <h1 id="clock">00:00:00</h1>
+    <div class="container">
+      <!-- 현재 시간을 표시합니다. -->
+      <h1 id="clock">
+        <span id="am-pm">오전</span> <span id="time">00:00:00</span>
+      </h1>
 
-    <!-- 날씨 정보를 표시합니다. (현재 + 내일) -->
-    <p id="weather">날씨 정보를 불러오는 중...</p>
-    <p id="tommorow-weather">내일 날씨 정보를 불러오는 중...</p>
-
-    <!-- 동기부여 문구입니다. -->
-    <p id="quote">오늘도 최선을 다 하자!</p>
-
-    <!-- 할 일 입력창 및 목록입니다. -->
-    <div class="todo-container">
-      <h2>당신의 오늘 할 일을 알려주세요</h2>
-      <input type="text" id="todo-input" />
-      <ul id="todo-list"></ul>
+      <!-- 할 일 입력창 및 목록입니다. -->
+      <div class="todo-container">
+        <h2>당신의 오늘 할 일을 알려주세요</h2>
+        <input type="text" id="todo-input" />
+        <ul id="todo-list"></ul>
+      </div>
     </div>
 
     <!-- main.js 파일의 script를 적용합니다. -->
